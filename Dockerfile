@@ -27,6 +27,7 @@ COPY dist/aprendiendo/browser /usr/share/nginx/html
 # Copiar la nueva configuración personalizada de Nginx
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
+RUN ls -lh /usr/share/nginx/html
 
 # Exponer el puerto en el que Nginx sirve (80 por defecto)
 EXPOSE 80
