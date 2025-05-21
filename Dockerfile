@@ -29,7 +29,7 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 
 # Exponer el puerto en el que Nginx sirve (80 por defecto)
-EXPOSE $PORT
+EXPOSE 80
 
 # Iniciar Nginx (se inicia automáticamente con CMD predeterminado)
 CMD ["nginx", "-g", "daemon off;"]
